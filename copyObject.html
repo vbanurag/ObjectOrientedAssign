@@ -1,0 +1,36 @@
+<script>
+    function employee(name, salary, address) {
+        this.name = (name == 'undefined') ? "_blank" : name;
+        this.salary = (salary == "undefined") ? 0 : salary;
+        this.address = (address == 'undefined') ? "_blank" : address;
+    }
+
+    function copyObject(obj) {
+        var keyset = Object.keys(obj);
+        var temp = {};
+        if (this instanceof employee) {
+            for (var i = 0; i < keyset.length; i++) {
+                this[keyset[i]] = obj[keyset[i]];
+            }
+            return;
+        } else {
+            for (var i = 0; i < keyset.length; i++) {
+                temp[keyset[i]] = obj[keyset[i]];
+            }
+            return temp;
+        }
+    }
+
+    employee.prototype.copyObject = copyObject; //For copy the Object from same type;
+</script>
+
+
+<script>
+    function foo() {
+        if (this instanceof foo) {
+            return ++object_count;
+        } else {
+            return ++call_count;
+        }
+    }
+</script>
