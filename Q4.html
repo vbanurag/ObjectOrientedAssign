@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Video Display</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="Q4.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="videodis">
+                <video id="myVideo" src="myvideo.mp4" type="video/mp4">
+
+        </video>
+
+                <div class="datashow">
+                    <div class="controls">
+                        <fieldset class="control">
+                            <legend>Controls</legend>
+                            <div class="but">
+                                <button class="btnStart">START</button>
+                                <button class="btnStop">STOP</button>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="infor">
+                        <table border="1px">
+                            <thead>
+                                <tr>
+                                    <td>Starting Time</td>
+                                    <td>Current Time</td>
+                                    <td>Remaining Time</td>
+                                    <td>Finish Time</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="startTime">0:00</td>
+                                    <td class="currentTime"></td>
+                                    <td class="remainingTime"></td>
+                                    <td class="finishTime"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- sctipt tag goes here-->
+    <script src="Q4.js">
+    </script>
+</body>
+
+</html>

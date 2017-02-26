@@ -1,0 +1,39 @@
+ .container {
+     width: 600px;
+     margin: 0 auto;
+ }
+ 
+ .content {
+     margin-top: 40px;
+ }
+ 
+ .infor {
+     margin-top: 40px;
+ }
+ 
+ table thead tr td {
+     font-weight: bold;
+ }
+ 
+ table tbody tr td {
+     text-align: center;
+ }
+ 
+ .infor {
+     width: 317px;
+     margin: 0 auto;
+     margin-top: 40px;
+ }
+ 
+ legend {
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ 
+ .control {
+     background-color: darkgrey;
+ }
+ 
+ thead {
+     color: coral;
+ }
